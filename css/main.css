@@ -1,8 +1,14 @@
 body {
   font-family: 'Nunito', Arial, sans-serif;
   font-size: 12px;
+  margin: 0;
 }
-
+.flex{
+    display: flex;
+}
+.grid{
+    display: grid;
+}
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
@@ -25,16 +31,172 @@ For banner over lay add this class to your div
   </div>
 </div>
 */
-.banner__container {
-  position: relative;
+  /* position: relative;
 }
 
-.banner__container:before {
+/* .banner__container:before {
   position: absolute;
   top: 0;
   right: 0;
-  left: 0;
+  left:  .banner__container {
+0;
   bottom: 0;
   background-color: rgba(0,0,0,0.4);
-  content: "";
+  /* content: ""; */
+
+
+   /* header  */
+header{
+  justify-content: space-between;
+  padding: 20px;
+  
+}
+header nav a{
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: medium;
+  margin-right: 20px;
+}
+
+/* banner_section */
+.banner {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/melbourne.jpg");
+  height: 650px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+
+  align-items:center;
+  justify-content: center;
+
+  filter:  brightness(50%);
+
+  /* background-blend-mode: darken; */
+}
+.banner__container{
+  width: 100px;
+  height: 50px;
+  color: white;
+  text-align: center;
+}
+.banner h3{
+  font-size: 3rem;
+  filter: brightness(100%);
+}
+.banner p{
+  margin :40px 20px;
+  font-size: large;
+  font-weight: bolder;
+}
+.banner nav a{
+  color: white;
+  background-color:rgb(202, 83, 83);;
+  text-decoration:none;
+  padding: 20px 50px;
+  font-size: 1rem;
+  box-shadow: 0 3px red;
+}
+/* .banner__container {
+      position: relative;
+    }
+
+    .banner__container:before {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      background-color: rgba(0,0,0,0.4);
+      content: "";
+   } */
+
+
+
+/* middle section */
+.middle_section{
+  background-color:rgba(194, 193, 193, 0.925);
+  padding: 20px;
+  justify-content: space-around;
+}
+.middle_section .item{
+  background-color: white;
+  margin-right: 20px;
+  box-shadow: 10px 5px 5px black;
+}
+
+.middle_section h2{
+  background-color:rgba(194, 193, 193, 0.925);
+  text-align: center;
+  
+}
+
+
+/* bottom section */
+.align_center{
+  text-align: center;
+  font-weight: bolder;
+}
+.bottom_section{
+
+ padding: 40px
+
+}
+.bottom_section_box{
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  /* justify-content: center;
+  align-items: center; */
+
+}
+
+.textbox-1{
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/fitzroy.jpg");
+  height: 250px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.textbox-2{
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/st-kilda.jpg");
+  height: 250px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.textbox-3{
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/central-business-district.jpg");
+  height: 250px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.text{
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/* bottom button */
+.bottom_button {
+  height:200px;
+  align-items:center;
+  justify-content: center;
+  
+}
+.bottom_button nav a{
+  color: white;
+  background-color:rgb(202, 83, 83);
+  text-decoration:none;
+  padding: 20px 50px;
+  font-size: 1rem;
+  box-shadow: 0 3px red;
+}
+.text_2{
+  padding:50px 0;
+  font-size: medium;
+  width: 70%;
+  background-color: grey;
+  width: 100%;
+  text-align: center;
 }
