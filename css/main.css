@@ -21,13 +21,18 @@ header{
   padding: 10px;
   
 }
-header nav a{
+header a{
   color: black;
   font-weight: bold;
   text-decoration: none;
   font-size: medium;
   margin-right: 20px;
 }
+
+header #bars{
+  display: none;
+}
+
 header nav a:hover{
   color: grey;
   font-size: large;
@@ -85,7 +90,7 @@ header nav a:hover{
   background-color:rgba(231, 228, 228, 0.966);
   padding: 20px;
   justify-content: space-around;
-  height: 200px;
+  height: 400px;
   align-items: center;
   
 }
@@ -94,7 +99,7 @@ header nav a:hover{
   margin-right: 30px;
   border: 1px solid rgb(189, 184, 184);
   font-size: large;
-  height: 150px;
+  height: 250px;
   /* width: 70%; */
 }
 
@@ -120,9 +125,11 @@ header nav a:hover{
 
 }
 .grid_3{
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
+
+
 
 .header_bottom_section h2{
   font-size: 2.5rem;
@@ -192,3 +199,99 @@ footer{
 footer p{
   margin-top: 30px;
 }
+
+header #bars{
+  display: none;
+}
+
+
+/* responsive media */
+@media (max-width: 480px){
+  header #bars{
+      display: block;
+  }
+  header nav {
+      display:none;
+  }
+}
+
+
+@media (max-width: 375px){
+  .banner_container{
+      height: 100px;
+      width: 50%;
+  }
+  .banner h3{
+      font-size: 1.8rem;
+  }
+  .banner p{
+      font-size: small;
+  }
+
+  .navigation a{
+      padding: 10px 5px;
+      font-size: 0.8rem;
+      height: 70px;
+      }
+      .middle_section{ 
+          height: 500px;
+          display: flex;
+          flex-direction:column;
+      }
+      .middle_section .item{
+          margin: 10px;
+          font-size: 0.9rem;
+          height: 200px;
+      }
+      .middle_section h2{
+          font-size: 0.8rem;
+          text-align: center;
+      }
+      .grid_3 {grid-template-columns:  1fr;}
+}
+
+@media (min-width: 376px) and (max-width: 480px){
+  
+  .banner{
+      height: 700px;
+  }
+  .banner h3{
+      font-size: 2rem;
+  }
+  .banner p{
+      font-size: 1.2rem;
+  }
+  .navigation a{
+  padding: 15px;
+  font-size: 0.8rem;
+  }
+  .middle_section{ 
+      display: flex;
+      flex-direction:column;
+  }
+  .middle_section .item{
+      margin: 10px;
+  }
+  .middle_section h2{
+      font-size: 1rem;
+      text-align: center;
+  }
+  .grid_3 {grid-template-columns:  1fr;}
+}
+
+
+@media  (min-width: 768px) and (max-width: 960px){
+  
+  .navigation a{
+      
+  padding: 20px;
+  font-size: 1rem;
+  }
+  
+  .middle_section h2{
+      font-size: 1.5rem;
+      text-align: center;
+  }
+  .grid_3 {grid-template-columns:  repeat(2, 1fr);}
+}
+
